@@ -4,7 +4,7 @@
 // accessing the application at "http://localhost:8888/php-todo-ex/", then
 // BASE_URL should be "/php-todo-ex/". If you are accessing the application at
 // "http://localhost:8888", then BASE_URL should be "/".
-define('BASE_URL', getenv('/archidep-php-todolist-ex/') ?: '/');
+define('BASE_URL', getenv('TODOLIST_BASE_URL') ?: '/');
 
 // Database connection parameters.
 define('DB_USER', getenv('TODOLIST_DB_USER') ?: 'todolist');
